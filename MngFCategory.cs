@@ -28,7 +28,7 @@ using System.IO;
                         arrayList.Add(newcatid);
                         arrayList.Add(newcatname);
                         arrayList.Add(date);
-                        AddnewItem(@"D:\aspdotnet\CSharpOPPsRepo\Food _Cour_ Managemen_ System\category.txt", arrayList);
+                        AddnewItem(@"C:\Training\DotNetTraining\FoodCourt__Management___System\category.txt", arrayList);
                         arrayList.Clear();
                         Console.Write(" Do you Want more Press 1:");
                         int check = Convert.ToInt32(Console.ReadLine());
@@ -42,10 +42,10 @@ using System.IO;
                         int showcatid = Convert.ToInt32(Console.ReadLine());
                         Console.Write("Enter the category name To Show Of Its Details : ");
                         string showcatname = Console.ReadLine();
-                        ViewDetailsOfItems(showcatid, showcatname, @"D:\aspdotnet\CSharpOPPsRepo\Food _Cour_ Managemen_ System\category.txt");
+                        ViewDetailsOfItems(showcatid, showcatname, @"C:\Training\DotNetTraining\FoodCourt__Management___System\category.txt");
                         goto AgainAndAgain;
                     case 3:
-                        ListAllItem(@"D:\aspdotnet\CSharpOPPsRepo\Food _Cour_ Managemen_ System\category.txt");
+                        ListAllItem(@"C:\Training\DotNetTraining\FoodCourt__Management___System\category.txt");
                         goto AgainAndAgain;
                     case 4:
                     updatemore:
@@ -53,14 +53,14 @@ using System.IO;
                         int updatecatid = Convert.ToInt32(Console.ReadLine());
                         Console.Write("Enter the  category name To update Of Its Details : ");
                         string updatecatname = Console.ReadLine();
-                        ViewDetailsOfItems(updatecatid, updatecatname, @"D:\aspdotnet\CSharpOPPsRepo\Food _Cour_ Managemen_ System\category.txt");
+                        ViewDetailsOfItems(updatecatid, updatecatname, @"C:\Training\DotNetTraining\FoodCourt__Management___System\category.txt");
                         Console.Write("Enter the new Name Of its Above Category : ");
                         string updatename = Console.ReadLine();
                         string date2 = DateTime.Now.ToString();
                         arrayList.Add(updatecatid);
                         arrayList.Add(updatename);
                         arrayList.Add(date2);
-                        UpdateExistItem(updatecatid, updatecatname, arrayList, @"D:\aspdotnet\CSharpOPPsRepo\Food _Cour_ Managemen_ System\category.txt");
+                        UpdateExistItem(updatecatid, updatecatname, arrayList, @"C:\Training\DotNetTraining\FoodCourt__Management___System\category.txt");
                         arrayList.Clear();
                         Console.Write(" Do you Want more Press 1:");
                         int check2 = Convert.ToInt32(Console.ReadLine());
